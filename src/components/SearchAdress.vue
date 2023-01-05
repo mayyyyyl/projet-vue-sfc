@@ -23,7 +23,7 @@
                         <p class="coord">Latitude: {{ adresse.geometry["coordinates"][0] }} | Longitude: {{
                             adresse.geometry["coordinates"][1]
                         }}</p>
-                        <button type="button" class="btn btn-primary" @click="showMore(adresse.geometry)">Voir
+                        <button type="button" class="btn btn-secondary" @click="showMore(adresse.geometry)">Voir
                             plus</button>
                         <hr>
                     </li>
@@ -91,7 +91,7 @@ li {
 }
 
 li:hover {
-    background-color: rgb(184, 30, 30);
+    background-color: #ff8800f9;
     color: rgb(255, 244, 244);
 }
 
