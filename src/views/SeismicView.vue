@@ -1,6 +1,7 @@
 <template>
   <div class="search">
     <SeismicArea msg="Bienvenue sur notre page Zone Sismique." />
+
   </div>
 </template>
 
@@ -11,6 +12,7 @@ export default {
   name: 'SeismicView',
   components: {
     SeismicArea
-  }
+  },
+
 }
 </script>

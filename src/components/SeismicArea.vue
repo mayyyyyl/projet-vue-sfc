@@ -20,27 +20,6 @@ export default {
   props: {
     msg: String
   },
-  data() {
-    return {
-      level: "",
-      latlon: ""
-    }
-  },
-  created: {},
-  watch: {},
-  methods: {
-    async fetchData() {
-      try {
-        this.latlon
-        console.log("latlon = ", latlon)
-        const response = await axios.get(apiURL + this.latlon + rayon);
-        this.level = response.data;
-        console.log("level = ", this.level)
-      } catch (error) {
-        console.log(error)
-      }
-    }
-  }
 }
 </script>
 
