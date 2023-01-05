@@ -1,6 +1,6 @@
 <template>
   <div class="search">
-    <h1>This is an search page</h1>
+    <SearchAdress msg="Bienvenue sur notre page de recherche d'adresse." />
   </div>
 </template>
 
