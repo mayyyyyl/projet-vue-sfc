@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <router-link to="/">Accueil</router-link> |
+    <router-link to="/home">Accueil</router-link> |
     <router-link to="/search">Recherche d'adresse</router-link>
   </nav>
   <router-view />
@@ -19,12 +19,15 @@ nav {
   padding: 30px;
 }
 
+a:hover {
+    color: #322d2d70 ! important;
+}
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #ffffff;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #0b0b0b;
 }
 </style>
