@@ -23,6 +23,8 @@
                         <p class="coord">Latitude: {{ adresse.geometry["coordinates"][0] }} | Longitude: {{
                             adresse.geometry["coordinates"][1]
                         }}</p>
+                        <button type="button" class="btn btn-primary" @click="showMore(adresse.geometry)">Voir
+                            plus</button>
                         <hr>
                     </li>
                 </ul>
@@ -40,12 +42,12 @@ export default {
     data() {
         return {
             adresses: null,
+            coord: "",
             searchAddress: "",
             searchLimit: "15"
         };
     },
     created: function () {
-        this.fetchData()
     },
     watch: {
         searchAddress: "fetchData",
@@ -67,6 +69,10 @@ export default {
 
             }
         },
+        showMore: function (coord) {
+            console.log(coord.coordinates)
+            this.$router.push({ name: 'seismic', params: { coord: coord.coordinates } })
+        }
     }
 }
 </script>
