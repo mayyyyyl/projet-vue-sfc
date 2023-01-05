@@ -15,7 +15,7 @@ const routes = [
     component: SearchView
   },
   {
-    path: '/seismic',
+    path: '/seismic/:lat/:lon',
     name: 'seismic',
     component: SeismicView
   }

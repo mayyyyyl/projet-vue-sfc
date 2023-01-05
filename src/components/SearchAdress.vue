@@ -73,7 +73,7 @@ export default {
         },
         showMore: function (coord) {
             console.log(coord.coordinates)
-            this.$router.push({ name: 'seismic', params: { coord: coord.coordinates } })
+            this.$router.push({ name: 'seismic', params: { lat: coord.coordinates[0], lon: coord.coordinates[1] } })
         }
     }
 }
