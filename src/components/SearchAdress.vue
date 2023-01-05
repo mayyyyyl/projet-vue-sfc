@@ -7,7 +7,7 @@
             d'adresse inexistante car elle se base sur les données du gouvernement.</p>
         <div class="row pb-4 align-items-center">
             <div class="d-flex align-items-center justify-content-center">
-                <img src="img/pin.jpg" style="height: 2em;">
+                <img src="../assets/pin.jpg" style="height: 2em;">
                 <h5 class="p-3">Rechercher une adresse:</h5>
                 <form class="p-3">
                     <input class="form-control" type="text" maxlength="50" v-model="searchAddress"
@@ -70,3 +70,51 @@ export default {
     }
 }
 </script>
+<style scoped>
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    border-radius: 2px;
+    padding: .3em;
+}
+
+li:hover {
+    background-color: rgb(184, 30, 30);
+    color: rgb(255, 244, 244);
+}
+
+.coord {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+hr {
+    size: 80%;
+}
+
+ul {
+    display: none;
+    max-height: 22em;
+    width: 30em;
+    overflow-y: scroll;
+}
+
+ul.active {
+    display: block;
+}
+
+/* ul overflow scrollbar style */
+ul::-webkit-scrollbar {
+    width: 12px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: rgb(210, 210, 210);
+    border-radius: 20px;
+    border: 3px solid rgb(172, 169, 169);
+}
+</style>
