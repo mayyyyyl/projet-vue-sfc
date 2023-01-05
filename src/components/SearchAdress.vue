@@ -32,6 +32,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 const apiUrl = "https://api-adresse.data.gouv.fr/search/?q="
 const limit = "&limit="
 
