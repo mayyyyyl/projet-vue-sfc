@@ -1,19 +1,20 @@
-# projet-vue-sfc
+# Projet Vue SFC
 
-## Project setup
-```
-npm install
-```
+## Télécharger le projet
 
-### Compiles and hot-reloads for development
 ```
+git clone https://github.com/mayyyyyl/projet-vue-sfc.git
+npm i
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Le projet 
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Cette application vous permet de retrouver une adresse grâce à la base de données du gouvernement. Pour chacun adresse retrouver des informations comme l'indice sismique de la zone.
+
+
+
+## Api utilisée
+
+https://adresse.data.gouv.fr/api-doc/adresse  
+https://api.gouv.fr/documentation/api-georisques
